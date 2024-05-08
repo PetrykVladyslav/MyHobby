@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Young Fishing Blog</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', sans-serif;
+    }
+
+    .main {
+      background: url('https://avatars.mds.yandex.net/i?id=79dc1e7de6b1ca248b81379bb5c05d82ffefd2b2-10976941-images-thumbs&n=13') no-repeat center center fixed;
+      background-size: cover;
+      background-attachment: fixed;
+      color: #ffffff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      position: relative;
+      width: 97.3%;
+      height: 727px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: -20px;
+      position: relative;
+    }
+    .main p.young-fishers-blog-pro-ribalku {
+      font-size: 2.5em;
+      margin-top: 20px;
+      font-weight: bold;
+      text-align: center;
+      display: inline-block;
+      position: relative;
+    }
+    .main p.young-fishers-blog-pro-ribalku {
+      font-size: 50px;
+      color: #ffffff!important;
+      text-shadow: 2px 0 2px #000,
+        0 2px 2px #000,
+        -2px 0 2px #000,
+        0 -2px 2px #000;
+    }
+    .btn-cikavit {
+      background-color: #61FF00;
+      color: #000;
+      padding: 15px 30px;
+      border-radius: 5px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 20px;
+      font-size: 1.2em;
+      font-weight: bold;
+      text-align: center;
+    }
+    .youtube-icon {
+      position: absolute;
+      bottom: 5px;
+      right: 10px;
+      width: 110px;
+      height: auto;
+    }
+    .youtube-icon img {
+      width: 100%;
+      height: 100%;
+    }
+    .instagramm-icon {
+      position: absolute;
+      bottom: 15px;
+      right: 153px;
+      width: 90px;
+      height: auto;
+    }
+    .instagramm-icon img {
+      width: 100%;
+      height: 100%;
+    }
+    .facebook-icon {
+      position: absolute;
+      bottom: 30px;
+      right: 285px;
+      width: 65px;
+      height: auto;
+    }
+    .facebook-icon img {
+      width: 100%;
+      height: 100%;
+    }
+    .logo {
+      max-width: 150px;
+      height: auto;
+      margin-bottom: 450px;
+    }
+    .menu {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      margin-bottom: 450px;
+    }
+    .menu p {
+      margin: 0 20px;
+      cursor: pointer;
+      text-decoration: underline;
+      font-size: 2em;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    .menu .young-fishers-blog-pro-ribalku {
+      text-decoration: none;
+      cursor: default;
+    }
+    p.young-fishers-blog-pro-ribalku {
+      text-decoration: none;
+      cursor: default;
+      margin: 0;
+      font-size: 2em;
+      margin-top: 20px;
+      font-weight: bold;
+      text-align: center;
+    }
+    .secondary-text,
+    .statti-jaki-mozhut-buti-vam-korisni,
+    .flex-wrapper-one p,
+    .flex-wrapper-five p,
+    .relative-wrapper-two p,
+    .flex-wrapper-three p,
+    .flex-wrapper-four p {
+      color: #000000;
+      font-weight: bold;
+      font-size: 1.5em;
+      cursor: pointer;
+      font-family: 'Inter', sans-serif;
+      width: 100%;
+      text-align: center;
+    }
+    .flex-wrapper-five img {
+      cursor: pointer;
+    }
+    .flex-wrapper-one img {
+      cursor: pointer;
+    }
+    .relative-wrapper-one img {
+      cursor: pointer;
+    }
+    .flex-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: row;
+      margin-bottom: -250px;
+      width: 100%;
+      margin-top: -250px;
+    }
+
+.secondary {
+  width: 100%;
+  background-color: #AE8C64;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+.statti-jaki-mozhut-buti-vam-korisni {
+  margin-top: 50px;
+  font-size: 2.5em;
+  width: 100%;
+}
+.slider-container {
+  width: 80%;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative; 
+}
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  
+}
+.slide {
+  min-width: 100%;
+}
+.slider img {
+  width: 900px;
+  height: 600px;
+  border-radius: 8px;
+}
+.dots {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ae8c64;
+  margin: 0 5px;
+  cursor: pointer;
+}
+.best-photos-of-the-week {
+  margin-top: 60px;
+  font-size: 2.5em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.naivideo {
+  margin-top: 70px;
+  font-size: 2.5em;
+  width: 100%;
+  font-weight: bold;
+}
+.flex-wrapper-one {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+.flex-wrapper-one img.lin,
+.flex-wrapper-five img.manka,
+.relative-wrapper-two.schyka {
+  width: 419px;
+  height: 250px;
+}
+.flex-wrapper-one img img.lin {
+  width: 400px;
+  height: 250px;
+}
+.relative-wrapper-one img.lin {
+  margin-right: -37px;
+}
+.relative-wrapper-one p.top-10-cikavih-fakti-pro-lina {
+  margin-left: 18px;
+}
+.relative-wrapper-two img.schyka {
+  width: 415px;
+  height: 250px;
+}
+.relative-wrapper-two img.schyka {
+  margin-left: -45px;
+}
+.relative-wrapper-two p.top-10-cikavih-fakti-pro-lina {
+  margin-left: -15px;
+}
+.flex-wrapper-one .relative-wrapper-one,
+.flex-wrapper-five,
+.relative-wrapper-two {
+  width: calc(33.33% - 40px);
+  margin: 20px;
+}
+.flex-wrapper-one img,
+.flex-wrapper-five img,
+.relative-wrapper img {
+  width: 100%;
+  height: auto;
+}
+    .relative-wrapper-one p,
+    .flex-wrapper-five p,
+    .relative-wrapper-two p {
+      color: #000;
+      font-weight: bold;
+      font-size: 1.5em;
+      cursor: pointer;
+      font-family: 'Inter', sans-serif;
+      width: 100%;
+      text-align: center;
+      margin-top: 10px;
+    }
+    .line {
+      width: 100%;
+      height: 3px;
+      background-color: #000000;
+      font-weight: bold;
+      margin: 20px 0;
+    }
+    .flex-wrapper-four {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+      font-size: 2em;
+      width: 100%;
+      margin-bottom: 0;
+    }
+    .table-container {
+      margin-top: 30px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+    th, td {
+      border: 2.5px solid #000;
+      padding: 8px;
+      text-align: center;
+    }
+    th {
+      font-size: 2em;
+      background-color: #AE8C64;
+      color: #000000;
+    }
+  .table-container {
+  margin-top: 30px;
+  overflow: visible;
+}
+label {
+  color: #000000;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-us-popup {
+    position: absolute;
+    top: 20%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    background-color: #FFF8DC;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+ }
+input[type="email"],
+textarea {
+  font-size: 1.5em;
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+button[type="button"] {
+  background-color: #61FF00;
+  color: #000;
+  padding: 15px 30px;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+}
+
+button[type="button"]:hover {
+  background-color: #4AC500;
+}
+#feedbackForm input,
+#feedbackForm textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 4px solid #000;
+  border-radius: 8px;
+  background-color: #5d5c5c;
+  color: #ffffff;
+  outline: none;
+}
+#feedbackForm button {
+  background-color: #61FF00;
+  color: #000;
+  padding: 15px 30px;
+  border-radius: 5px;
+  border: 2px solid #000;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s; 
+}
+
+#feedbackForm button:hover {
+  background-color: #4AC500;
+}
+#feedbackForm button:active {
+  background-color: #338f00;
+  color: #fff;
+}
+  </style>
+</head>
+<body>
+
+<div class="main">
+  <div class="flex-wrapper">
+    <img alt="" class="logo" src="https://static.overlay-tech.com/assets/1dba236b-ada1-4f5a-9ebb-42a007ba9389.png" />
+    <div class="menu">
+      <p class="golovna1">Головна</p>
+      <p class="pro-nas">Про нас</p>
+      <p class="poshuk">Пошук</p>
+      <p class="vidguki">Відгуки</p>
+      <p class="kontakti">Контакти</p>
+    </div>
+  </div>
+  <p class="young-fishers-blog-pro-ribalku" data-text="YOUNG FISHERS - БЛОГ ПРО РИБАЛКУ">YOUNG FISHERS - БЛОГ ПРО РИБАЛКУ</p>
+  <a href="#" class="btn-cikavit">Що вас цікавить?</a>
+  <a href="https://www.youtube.com/c/YoungFishers" target="_blank" class="youtube-icon">
+    <img src="https://cdn-icons-png.flaticon.com/512/1936/1936383.png" alt="YouTube Icon">
+    <a href="https://www.instagram.com/_petrikvlad_/" target="_blank" class="instagramm-icon">
+      <img src="https://cdn-icons-png.flaticon.com/512/3741/3741664.png" alt="Instagramm Icon">
+      <a href="https://www.facebook.com/groups/1425587141149694/?ref=share" target="_blank" class="facebook-icon">
+        <img src="https://cdn-icons-png.flaticon.com/512/81/81341.png" alt="Facebook Icon">
+      </a>
+    </a>
+  </a>
+</div>
+<div class="secondary">
+  <p class="statti-jaki-mozhut-buti-vam-korisni">
+    Статті, які можуть бути вам корисні
+  </p>
+  <div class="flex-wrapper-one">
+    <div class="relative-wrapper-one">
+      <img
+        alt=""
+        class="polnolynie"
+        src="https://static.overlay-tech.com/assets/5b20b738-05f7-4b4a-8c0d-79d309d08d01.png"
+      />
+      <p class="chomu-ribaki-ne-ljubljat-povnolunnja">
+        Чому рибаки не люблять повнолуння?
+      </p>
+    </div>
+    <div class="flex-wrapper-five">
+      <img
+        alt=""
+        class="karas"
+        src="https://static.overlay-tech.com/assets/20acfe13-03dd-4f05-be48-e9a47a3850b5.png"
+      />
+      <p class="najkrascha-nazhivka-na-karasja">
+        Найкраща наживка на карася.
+      </p>
+    </div>
+    <div class="relative-wrapper-two">
+      <img
+        alt=""
+        class="osetr"
+        src="https://static.overlay-tech.com/assets/7cf113cb-a28d-4389-bbc1-29bdea1723b9.png"
+      />
+      <p class="najbil-sha-prisnovodna-riba-svitu">
+        Найбільша прісноводна риба світу.
+      </p>
+    </div>
+  </div>
+  <div class="flex-wrapper-one">
+    <div class="relative-wrapper-one">
+      <img
+        alt=""
+        class="lin"
+        src="https://static.overlay-tech.com/assets/6c5b62c0-c4b3-4500-a441-0c4894a01767.png"
+      />
+      <p class="top-10-cikavih-fakti-pro-lina">
+        Топ-10 цікавих фактів про лина.
+      </p>
+    </div>
+    <div class="flex-wrapper-five">
+      <img
+        alt=""
+        class="manka"
+        src="https://static.overlay-tech.com/assets/681e3079-e972-4827-9094-34399dc16802.png"
+      />
+      <p class="jak-pravil-no-zabiti-manku-na-bilu-ribu">
+        Як правильно забити манку на білу рибу?
+      </p>
+    </div>
+    <div class="relative-wrapper-two">
+      <img
+        alt=""
+        class="schyka"
+        src="https://static.overlay-tech.com/assets/154a02f7-7152-485f-824f-2e50b6fbf0b6.png"
+      />
+      <p class="top-10-cikavih-fakti-pro-lina">
+        Як правильно ловити щуку восени?
+      </p>
+    </div>
+  </div>
+  <div class="slider-container"> 
+    <p class="best-photos-of-the-week">
+      Фото від наших читачів
+    </p>
+    <div class="slider"> 
+      <div class="slide"> 
+        <img src="https://aif-s3.aif.ru/images/028/300/1137e45e9f4f186056b0aa97e957d9b0.jpg" alt="Фото 1">
+      </div>
+      <div class="slide">
+        <img src="https://cdnn1.ukraina.ru/img/102882/09/1028820995_0:0:0:0_600x0_80_0_0_64e976b49cac697e1de7da495ff59070.jpg" alt="Фото 2">
+      </div>
+      <div class="slide">
+        <img src="https://cdn.iportal.ru/preview/news/articles/815cc037a2ff909cad0f387b361185b20e6e58a2_1200_675_c.jpg" alt="Фото 3">
+      </div>
+      <div class="slide">
+        <img src="https://img.novosti-n.org/upload/news/758805.jpg" alt="Фото 4">
+      </div>
+      <div class="slide">
+        <img src="https://www.rbc.ua/static/img/_/_/____40243_1200x675.jpg" alt="Фото 5">
+      </div>
+    </div>
+    <div class="dots"></div>
+  </div>
+  <div class="video">
+    <p class="naivideo">
+      Відео, що може вам сподобатися
+    </p>
+    <iframe width="800" height="500" src="https://www.youtube.com/embed/vy2NniISBSI?si=k_pn-AJlVwV291Hj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  </div>
+  <div class="table-container">
+    <p class="naivideo">
+      Мінімальний допустимий для аматорського лову розмір риб
+    </p>
+    <table>
+      <thead>
+        <tr>
+          <th>Назва риби</th>
+          <th>Розмір, см</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Судак</td>
+          <td><strong>38</td>
+        </tr>
+        <tr>
+          <td><strong>Сом</td>
+          <td><strong>60</td>
+        </tr>
+        <tr>
+          <td><strong>Короп</td>
+          <td><strong>24</td>
+        </tr>
+        <tr>
+          <td><strong>Білий амур</td>
+          <td><strong>45</td>
+          <tr>
+            <td><strong>Щука</td>
+            <td><strong>30</td>
+          </tr>
+          <tr>
+            <td><strong>Лящ</td>
+            <td><strong>24</td>
+          </tr>
+          <tr>
+            <td><strong>Лин</td>
+            <td><strong>17</td>
+          </tr>
+          <tr>
+            <td><strong>Жерех</td>
+            <td><strong>40</td>
+          </tr>
+          <tr>
+            <td><strong>Голавль</td>
+            <td><strong>20</td>
+          </tr>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="table-container">
+  <form id="feedbackForm">
+    <label for="email">Ваш e-mail:</label>
+    <input type="email" id="email" name="email" required>
+    <br>
+    <label for="feedback">Введіть відгук:</label>
+    <textarea id="feedback" name="feedback" required></textarea>
+    <br>
+    <button type="button" onclick="submitFeedback()">Відправити відгук</button>
+  </form>
+</div>
+  <div class="line"></div>
+  <div class="flex-wrapper-four">
+    <p class="golovna2">Головна</p>
+    <p class="pro-nas">Про нас</p>
+    <p class="poshuk2">Пошук</p>
+    <p class="vidguki">Відгуки</p>
+    <p class="kontakti">Контакти</p>
+  </div>
+</div>
+<script>
+  let currentSlide = 0;
+  const slides = document.querySelectorAll('.slide');
+  const dotsContainer = document.querySelector('.dots');
+
+  slides.forEach((_, index) => {
+    const dot = document.createElement('div');
+    dot.classList.add('dot');
+    dot.addEventListener('click', () => showSlide(index));
+    dotsContainer.appendChild(dot);
+  });
+
+  const dots = document.querySelectorAll('.dot');
+
+  function showSlide(slideIndex) {
+    slides.forEach((slide, index) => {
+      slide.style.display = index === slideIndex ? 'block' : 'none';
+      dots[index].classList.toggle('active', index === slideIndex);
+    });
+  }
+  showSlide(currentSlide);
+  setInterval(() => {
+    currentSlide = (currentSlide + 1) % slides.length;
+    showSlide(currentSlide);
+  }, 3000);
+
+function submitFeedback() {
+  const emailInput = document.getElementById('email');
+  const feedbackInput = document.getElementById('feedback');
+  const email = emailInput.value;
+  const feedback = feedbackInput.value;
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailRegex.test(email)) {
+    alert('Будь ласка, введіть коректний e-mail.');
+    return;
+  }
+  alert(`Дякуємо за відгук, ${email}!`);
+  emailInput.value = '';
+  feedbackInput.value = '';
+}
+
+  const btnCikavit = document.querySelector('.btn-cikavit');
+
+  btnCikavit.addEventListener('mouseover', function() {
+    btnCikavit.style.backgroundColor = '#4AC500';
+  });
+
+  btnCikavit.addEventListener('mouseout', function() {
+    btnCikavit.style.backgroundColor = '#61FF00';
+  });
+
+  const scrollToMain = () => {
+    const mainSection = document.querySelector('.main');
+    mainSection.scrollIntoView({ behavior: 'smooth' });
+  };
+
+  const scrollToSecondary = () => {
+    const secondarySection = document.querySelector('.secondary');
+    secondarySection.scrollIntoView({ behavior: 'smooth' });
+  };
+
+  const mainButton = document.querySelector('.golovna2');
+  mainButton.addEventListener('click', scrollToMain);
+
+  const searchButton = document.querySelector('.poshuk');
+  searchButton.addEventListener('click', scrollToSecondary);
+
+  const searchButton2 = document.querySelector('.poshuk2');
+  searchButton2.addEventListener('click', scrollToSecondary);
+
+  let aboutUsPopup;
+
+  const toggleAboutUsPopup = () => {
+    if (!aboutUsPopup) {
+      aboutUsPopup = document.createElement('div');
+      aboutUsPopup.classList.add('about-us-popup');
+      aboutUsPopup.textContent = 'Привіт, мене звати Владислав, мені 18, я веду свій блог про риболовлю. Дякую, що завітав на наш сайт. Наші соціальні мережі ви зможете знайти у правому нижньому куті цієї сторінки';
+      document.body.appendChild(aboutUsPopup);
+    } else {
+      aboutUsPopup.remove();
+      aboutUsPopup = null;
+    }
+  };
+
+  const aboutUsText = document.querySelector('.pro-nas');
+  aboutUsText.addEventListener('click', toggleAboutUsPopup);
+  
+</script>
+
+</body>
+</html>
